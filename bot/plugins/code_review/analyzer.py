@@ -22,6 +22,13 @@ async def analyze_code(ctx, *, code: str = None):
 		code = code[10:-3]  
 
 	elif code.startswith('```'):
-		code = code[3:-3]:
+        code = code[3:-3]
+
+    code = code.strip()
+
+    # Create a temporary file to hold the code
+    with open("temp_code.py", "w") as temp_file:
+        temp_file.write(code);
+
 
 	
