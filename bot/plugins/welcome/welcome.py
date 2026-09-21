@@ -55,7 +55,7 @@ class Welcome(commands.Cog):
         )
 
             embed.set_footer(
-                text="PN DISCORD • DEV ASSISTANT"
+                text="Code. Learn. Build. Together"
         )
 
             await channel.send(
