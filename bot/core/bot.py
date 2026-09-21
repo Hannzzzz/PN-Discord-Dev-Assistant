@@ -1,8 +1,7 @@
 import os
-from http import client
 
-from os import discord
-from discord import commands
+import discord
+from discord.ext import commands
 from core.plugin_manager import load_plugins
 
 intents = discord.intents.default()
@@ -18,7 +17,7 @@ async def on_ready():
 
     await load_plugins(client)
 
-client.run(client.getenv("DISCORD_TOKEN"))
+client.run(os.getenv("DISCORD_TOKEN"))
 
 
 
